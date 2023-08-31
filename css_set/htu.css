@@ -1,0 +1,26 @@
+.manual-box {
+  width: 310px;
+  height: 400px;
+  overflow-y: auto; 
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.manual-text{
+  color: white;
+  size: bold;
+}
+
+.manual-box::-webkit-scrollbar {
+  width: 0.5em;
+}
+.manual-box::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.manual-box::-webkit-scrollbar-track {
+  background-color: transparent;
+}

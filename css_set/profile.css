@@ -1,0 +1,31 @@
+.profile-section {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.nickname,
+.memo {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.nickname {
+  height: 20px;
+  margin-bottom: 10px;
+}
+.memo {
+  height: 40px;
+}
