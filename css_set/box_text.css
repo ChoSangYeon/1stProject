@@ -1,11 +1,10 @@
-/* --병합-- */
 .msg-box {
   width: 310px;
-  height: 340px;
+  height: 355px;
 }
 .manual-box {
   width: 310px;
-  height: 400px;
+  height: 415px;
 }
 
 .msg-box,
@@ -20,7 +19,8 @@
 }
 
 .msg-text,
-.manual-text {
+.manual-text,
+.answer {
   color: white;
   size: bold;
 }

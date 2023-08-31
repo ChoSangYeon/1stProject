@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../css_set/profile.css">
 </head>
 
-
 <body class="img-slide">
   <header>
     <h1 class="logo">WR</h1>
@@ -21,24 +20,26 @@
       <img class="profile-img" src="../img/kettlebell.jpg" alt="">
       <!-- 프로필 이미지 업로드 추가하고 싶음 -->
       <div class="name">
-        <input class="nickname" type="text" placeholder="닉네임">
-        <input class="memo" type="text" placeholder="메모">
+        <input class="nickname" type="text" placeholder="nickname">
+        <textarea  class="memo" name="memo" id="memo" cols="5" rows="10" placeholder="memo" minlength="0" maxlength="30"></textarea>
       </div>
     </div>
 
-    <!-- 업로드된 태그 영역: chatgpt에게 질문 전송 -->
-    
-    <!-- 자동완성 태그 영역: 프롬포트로 받아서, 위로 올리기 and area 안에 스크롤(htu.html 의 css와 동일) -->
-
-    <!-- input 영역: chatgpt api와 연동, 여기서 입력하면 routine.html에 답변이 올라옴 -->
+    <div class="notyet">
+      <p>아직 미완성</p>
+      <!-- 업로드된 태그 영역: chatgpt에게 질문 전송 -->
+      <!-- 자동완성 태그 영역: 프롬포트로 받아서, 위로 올리기 and area 안에 스크롤(htu.html 의 css와 동일) -->
+      <!-- click event가 발생하게 한다면? -->
+      <!-- input 영역: chatgpt api와 연동, 여기서 입력하면 routine.html에 답변이 올라옴 -->
+    </div>
 
     <div class="btn-set">
       <button class="btn" type="submit">save</button>
       <button class="btn" type="button" onClick="location.href='../html_set/start.html'">back</button>
     </div>
+
   </main>
-
-
+  <script href="../js_set/profile.js"></script>
 </body>
 
 </html>

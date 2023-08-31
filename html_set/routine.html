@@ -15,19 +15,24 @@
     <p class="logo-sub">WorkoutRecommend</p>
   </header>
   <main>
-    <div class="msg-box">
-      <p class="msg-text">
-        ChatGPT의 추천 루틴
-        <br><br>
-        
-      </p>
-    </div>
-
-    <div class="btn-set">
-      <button class="btn" type="button">another routine</button>
-      <button class="btn" type="button" onClick="location.href='../html_set/start.html'">back</button>
+    <div class="container">
+      <form>
+        <div class="msg-box">
+          <p class="msg-text">
+            ChatGPT의 추천 루틴
+            <hr>
+            <input type="text">
+            <div class="answer"></div>
+          </p>
+        </div>
+        <div class="btn-set">
+          <button class="btn gpt-answer" type="submit">make a routine</button>
+          <button class="btn" type="button" onClick="location.href='../html_set/start.html'">back</button>
+        </div>
+      </form>
     </div>
   </main>
+  <script src="../js_set/chatgpt.js" ></script>
 </body>
 
 </html>

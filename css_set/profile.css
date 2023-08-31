@@ -20,7 +20,7 @@
 .memo {
   width: 200px;
   border-radius: 10px;
-  background-color: #aaa;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-weight: bold;
   border: none;
@@ -32,4 +32,25 @@
 }
 .memo {
   height: 40px;
+  resize: none;
+}
+
+.btn-set {
+  /* margin-top: 100px; */
+}
+
+.notyet {
+  width: 310px;
+  height: 255px;
+  overflow-y: auto; 
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: white;
 }
