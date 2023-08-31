@@ -1,26 +1,37 @@
+/* --병합-- */
+.msg-box {
+  width: 310px;
+  height: 340px;
+}
 .manual-box {
   width: 310px;
   height: 400px;
+}
+
+.msg-box,
+.manual-box {
   overflow-y: auto; 
   margin: 20px auto 0;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
   margin-bottom: 30px;
 }
 
-.manual-text{
+.msg-text,
+.manual-text {
   color: white;
   size: bold;
 }
 
+.msg-box::-webkit-scrollbar,
 .manual-box::-webkit-scrollbar {
   width: 0.5em;
 }
-.manual-box::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
+.msg-box::-webkit-scrollbar-thumb,
+.msg-box::-webkit-scrollbar-track,
+.manual-box::-webkit-scrollbar-thumb,
 .manual-box::-webkit-scrollbar-track {
   background-color: transparent;
 }
