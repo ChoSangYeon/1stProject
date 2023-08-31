@@ -25,12 +25,18 @@
       </div>
     </div>
 
-    <div class="notyet">
-      <p>아직 미완성</p>
+    <div class="submit-box">
+      <p>루틴 추천 키워드</p>
+      <hr>
+      <div class="output" id="output-div"></div>
       <!-- 업로드된 태그 영역: chatgpt에게 질문 전송 -->
-      <!-- 자동완성 태그 영역: 프롬포트로 받아서, 위로 올리기 and area 안에 스크롤(htu.html 의 css와 동일) -->
-      <!-- click event가 발생하게 한다면? -->
       <!-- input 영역: chatgpt api와 연동, 여기서 입력하면 routine.html에 답변이 올라옴 -->
+      <div class="box-down">
+        <div class="search-box">
+          <input class="search" type="text" id="inputValue" placeholder="ex. 가슴, 턱걸이, 덤벨()kg...">
+          <button onclick="displayInputValue()">+</button>
+        </div>
+      </div>
     </div>
 
     <div class="btn-set">
@@ -39,7 +45,7 @@
     </div>
 
   </main>
-  <script href="../js_set/profile.js"></script>
+  <script src="../js_set/profile.js"></script>
 </body>
 
 </html>
