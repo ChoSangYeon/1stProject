@@ -4,16 +4,33 @@
   flex-direction: row;
 }
 
-.profile-img {
+.profile-section:first-child {
+  position: relative;
+}
+
+
+#image_container {
   width: 84px;
   height: 84px;
+  background-color: #aaa;
   border-radius: 50px;
+  overflow: hidden;
+}
+
+#image_container img {
+  width: 84px;
+  height: 84px;
+}
+
+#image_label {
+  margin-left: 10px;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  position: absolute;
+  margin-left: 120px;
 }
 
 .nickname,
@@ -45,7 +62,6 @@
   border: none;
   border-radius: 5px;
   margin-bottom: 30px;
-
   position: relative;
 }
 
@@ -95,7 +111,6 @@ p,
 
 .value {
   margin-right: 20px;
-  cursor: pointer;
   border: 1px solid white;
   border-radius: 10px;
 }
