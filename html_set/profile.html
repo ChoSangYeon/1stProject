@@ -15,43 +15,36 @@
     <p class="logo-sub">WorkoutRecommend</p>
   </header>
   <main>
-
     <div class="profile-section">
-      
       <div>
-        <div id="image_container"></div>
-        <label id="image_label" for="image">
-          <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);">
-        </label>
+        <div id="image_container"><!-- <img src="파일 선택한 이미지가 썸네일이 됩니다"> --></div>
+        <label id="image_label" for="image"></label>
+        <input type="file" id="image_label" accept="image/*" onchange="setThumbnail(event);">
       </div>
-      
       <div class="name">
         <input class="nickname" type="text" placeholder="nickname">
         <textarea  class="memo" name="memo" id="memo" cols="5" rows="10" placeholder="memo" minlength="0" maxlength="30"></textarea>
       </div>
-
     </div>
 
     <div class="submit-box">
       <p>루틴 추천 키워드</p>
       <hr>
-      <div class="output" id="output-div"></div>
+      <div class="output" id="outputValue"></div>
       <!-- 업로드된 태그 영역: chatgpt에게 질문 전송 -->
       <!-- input 영역: chatgpt api와 연동, 여기서 입력하면 routine.html에 답변이 올라옴 -->
       <div class="box-down">
         <div class="search-box">
-          <input class="search" type="text" id="inputValue" placeholder="ex. 가슴, 턱걸이, 덤벨()kg...">
-          <button onclick="displayInputValue()">+</button>
+          <input class="search" type="text" name="keyword" id="inputValue" placeholder="ex. 가슴, 턱걸이, 덤벨()kg...">
+          <button onclick="sendInputValue()">+</button>
         </div>
       </div>
     </div>
-<!-- value 배열들의 줄바꿈, 높낮이는 무시할 것 -->
-
     <div class="btn-set">
+      <!-- save 버튼에도 기능이 추가될 예정 -->
       <button class="btn" type="submit">save</button>
       <button class="btn" type="button" onClick="location.href='../html_set/start.html'">back</button>
     </div>
-
   </main>
   <script src="../js_set/profile.js"></script>
 </body>

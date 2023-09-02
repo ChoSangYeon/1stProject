@@ -8,7 +8,6 @@
   position: relative;
 }
 
-
 #image_container {
   width: 84px;
   height: 84px;
@@ -23,7 +22,8 @@
 }
 
 #image_label {
-  margin-left: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
 }
 
 .name {
@@ -54,7 +54,7 @@
 
 .submit-box {
   width: 310px;
-  height: 255px;
+  height: 230px;
   overflow-y: auto; 
   margin: 20px auto 0;
   padding: 10px;
@@ -107,10 +107,4 @@ p,
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid white;
   color: white;
-}
-
-.value {
-  margin-right: 20px;
-  border: 1px solid white;
-  border-radius: 10px;
 }
