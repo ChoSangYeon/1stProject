@@ -24,7 +24,7 @@ function sendInputValue() {
 function keyWordOutput() {
   const outputValue = document.getElementById("outputValue");
   document.getElementById("outputValue").innerHTML = inputData;
-  outputValue.innerHTML = inputData.join("&nbsp&nbsp");
+  outputValue.innerHTML = inputData.join("&nbsp;&nbsp;");
 }
 
 //if문을 사용한다면? if (출력값의 길이가 > .submit-box width) {줄바꿈을 해라}
