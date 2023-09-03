@@ -38,9 +38,8 @@ function chatGPTAIP() {
   })
 }
 
-//profile.html에서 받은 정보로 routine.html에 띄우게 하는 것이 목표
-//profile.html의 input값을 localstorage에 넘기기
-//js파일 따로 있어야할 듯?
-
-//할루시네이션 잡기
-//배웠던 데이터 더 추가하는 거 연습해보기
+//localstorage 값 가져오기
+const receiveLS = localStorage.getItem('workout');
+const outputLS = receiveLS.toString(); //문장 출력
+document.write(outputLS); // -> input의 역할을 할 수 있도록
+console.log(outputLS); //
