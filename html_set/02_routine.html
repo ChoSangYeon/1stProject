@@ -21,14 +21,14 @@
           <p class="msg-text">
             ChatGPT의 추천 루틴
             <hr>
-            <input type="text">
-            <!-- input 입력창은 지워질 예정, profile.html에서 받은 배열 값을 api에 넣어야함 -->
+            <input class="trick" type="hidden">
+            <!-- input tag를 지우면 api가 안됨, 꼼수 -->
             <div class="answer"></div>
           </p>
         </div>
         <div class="btn-set">
           <button class="btn gpt-answer" type="button">make a routine</button>
-          <button class="btn" type="button" onclick="location.href='index.html'">back</button>
+          <button class="btn" type="button" onclick="location.href='../index.html'">back</button>
         </div>
       </form>
     </div>
