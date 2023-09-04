@@ -18,8 +18,8 @@
 ### 3.1 프로젝트 구조
 ![Alt text](img/wr_plan.png)
 ![Alt text](img/wr_qr.png)
-- https://mm.tt/app/map/2923105017?t=3jPE3sXYZg
-- 마인드맵: MindMeister
+- 마인드맵: MindMeister: 구현도
+- https://www.mindmeister.com/app/map/2930201760
 ### 3.2 개발 일정(WBS)
 - 2023-08-30 ~ 2023-09-06
 ## 4. UI / BM
