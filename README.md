@@ -13,7 +13,7 @@
 ### 2.1 개발환경
 - VSCode
 ### 2.2 배포 URL
-- https://github.com/ChoSangYeon/1stProject.git
+- https://chosangyeon.github.io/1stProject/
 ## 3. 프로젝트 구조와 개발 일정
 ### 3.1 프로젝트 구조
 ![Alt text](img/wr_plan.png)
