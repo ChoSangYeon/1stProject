@@ -5,10 +5,20 @@ const $answer = document.querySelector('.answer')
 const data = []
 data.push({
   "role": "system",
-  "content": "assistant는 홈트레이닝 루틴을 추천합니다." 
+  "content": "assistant는 홈트레이닝 루틴을 추천합니다."
 })
 
-const url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`   
+const url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`
+
+const receiveLS = localStorage.getItem('workout');
+
+if (receiveLS) {
+  const outputLS = receiveLS.toString();
+  data.push({
+    "role": "user",
+    "content": outputLS
+  });
+}
 
 $button.addEventListener('click', e => {
   e.preventDefault()
@@ -26,7 +36,7 @@ function chatGPTAIP() {
   fetch(url, {
     method: 'POST',
     headers: {
-      'Content-Type': 'applicatjson'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify(data),
     redirect: 'follow'
@@ -34,12 +44,6 @@ function chatGPTAIP() {
   .then(res => res.json())
   .then(res => {
     console.log(res)
-    $answer.innerHTML = `<p>${res.choices[0].message.content}</P>`
+    $answer.innerHTML = `<p>${res.choices[0].message.content}</p>`
   })
 }
-
-//localstorage 값 가져오기
-const receiveLS = localStorage.getItem('workout');
-const outputLS = receiveLS.toString(); //문장 출력
-document.write(outputLS); // -> input의 역할을 할 수 있도록
-console.log(outputLS); //
