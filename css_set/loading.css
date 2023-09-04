@@ -1,0 +1,31 @@
+/* 페이지 로딩 */
+.container {
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 170px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top: 10px solid #aaa;
+  animation: spin 2s linear infinite;
+}
+
+.wait-msg {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 190px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

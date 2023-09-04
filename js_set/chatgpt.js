@@ -1,8 +1,9 @@
 //hidden처리
 const $input = document.querySelector('input')
-
 const $button = document.querySelector('.gpt-answer')
 const $answer = document.querySelector('.answer')
+const $loader = document.querySelector(".loader");
+const $waitMsg = document.querySelector(".wait-msg");
 
 const data = []
 data.push({
@@ -34,7 +35,9 @@ $button.addEventListener('click', e => {
   })
   $input.value = ''
 
-  chatGPTAIP()
+  showLoad();
+
+  chatGPTAIP();
 })
 
 //루틴 출력
@@ -50,6 +53,24 @@ function chatGPTAIP() {
   .then(res => res.json())
   .then(res => {
     console.log(res)
-    $answer.innerHTML = `<p>${res.choices[0].message.content}</p>`
+    $answer.innerHTML = `<pre>${res.choices[0].message.content}</pre>`
+
+    hideLoad();
   })
 }
+
+//페이지 로딩
+function showLoad() {
+  if ($loader && $waitMsg) {
+    $loader.style.display = "block";
+    $waitMsg.style.display = "block";
+  }
+}
+function hideLoad() {
+  if ($loader && $waitMsg) {
+    $loader.style.display = "none";
+    $waitMsg.style.display = "none";
+  }
+}
+
+//데이터를 추가해서 할루시네이션 잡기

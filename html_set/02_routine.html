@@ -7,6 +7,7 @@
   <title>routine page</title>
   <link rel="stylesheet" href="../css_set/common.css">
   <link rel="stylesheet" href="../css_set/box_text.css">
+  <link rel="stylesheet" href="../css_set/loading.css">
 </head>
 
 <body class="img-slide">
@@ -22,12 +23,15 @@
             ChatGPT의 추천 루틴
             <hr>
             <input class="trick" type="hidden">
-            <!-- input tag를 지우면 api가 안됨, 꼼수 -->
             <div class="answer"></div>
+            <div class="loading">
+              <div class="loader" style="display: none;"></div>
+              <p class="wait-msg" style="display: none;">WR이 출력 중입니다.</p>
+            </div>
           </p>
         </div>
         <div class="btn-set">
-          <button class="btn gpt-answer" type="button">make a routine</button>
+          <button class="btn gpt-answer" id="make" type="button">make a routine</button>
           <button class="btn" type="button" onclick="location.href='../index.html'">back</button>
         </div>
       </form>

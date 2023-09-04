@@ -25,6 +25,15 @@
   size: bold;
 }
 
+pre {
+  color: white;
+  font-family: sans-serif;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow: auto;
+
+}
+
 .msg-box::-webkit-scrollbar,
 .manual-box::-webkit-scrollbar {
   width: 0.5em;
