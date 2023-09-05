@@ -16,8 +16,8 @@
 - https://chosangyeon.github.io/1stProject/
 ## 3. 프로젝트 구조와 개발 일정
 ### 3.1 프로젝트 구조
-- 초기 도안 작성
-![Alt text](img/wr_plan.png)
+- 초기 도안 작성<br>
+![Alt text](img/wr_plan.png)<br>
 - 마인드맵: MindMeister: 구현도
 - https://www.mindmeister.com/app/map/2930201760
 ### 3.2 개발 일정(WBS)
