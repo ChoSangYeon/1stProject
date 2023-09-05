@@ -2,7 +2,7 @@
 function setThumbnail(event) {
   const reader = new FileReader()
 
-  reader.onload = function() {
+  reader.onload = function(event) {
     const img = document.createElement("img");
     img.setAttribute("src", event.target.result);
     document.querySelector("div#image_container").appendChild(img);

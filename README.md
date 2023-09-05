@@ -16,12 +16,12 @@
 - https://chosangyeon.github.io/1stProject/
 ## 3. 프로젝트 구조와 개발 일정
 ### 3.1 프로젝트 구조
+- 초기 도안 작성
 ![Alt text](img/wr_plan.png)
-![Alt text](img/wr_qr.png)
 - 마인드맵: MindMeister: 구현도
 - https://www.mindmeister.com/app/map/2930201760
 ### 3.2 개발 일정(WBS)
 - 2023-08-30 ~ 2023-09-06
-## 4. UI / BM
+## 4. UI
 - 아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
 - 가능하면 움직이는 gif로 실행되는 것을 추천
