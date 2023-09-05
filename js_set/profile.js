@@ -27,13 +27,7 @@ function keyWordOutput() {
   outputValue.innerHTML = inputData.join("&nbsp;&nbsp;");
 }
 
-// save 버튼으로 배열을 localstorage에 저장
+// save 버튼으로 배열을 localstorage에 저장 -> 피드백반영
 function sendLocalStorage() {
-  const sendLSButton = document.querySelector('#sendLSButton');
-  sendLSButton.addEventListener('click', function() {
-    const workoutArray = inputData;
-    let makeValue = JSON.stringify(workoutArray);
-    makeValue = inputData.toString();
-    localStorage.setItem('workout', makeValue);
-  });
+  localStorage.setItem('workout', JSON.stringify(inputData));
 }
