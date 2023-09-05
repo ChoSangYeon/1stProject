@@ -88,39 +88,22 @@ const data = [{
   "content": "밴드가 있다면 집에서도 더욱 효과적이고 다양한 운동을 할 수 있습니다."
 }]
 
-data.push({
-  "role": "system",
-  "content": "assistant는 홈 트레이닝 루틴을 추천한다."
-  // "role": "user",
-  // "content": "if (role !== assistant)"
-  })
-
 //chatgpt api
 const url = `https://estsoft-openai-api.jejucodingcamp.workers.dev/`
 
-//localstorage에서 키워드 추출
-const receiveLS = localStorage.getItem('workout');
-
-if (receiveLS) {
-  const outputLS = receiveLS.toString();
-  data.push({
-    "role": "user",
-    "content": outputLS
-  });
-}
-
-//make a routine 버튼
+//localstorage에서 키워드 추출, make a routine 버튼
 $button.addEventListener('click', e => {
-  e.preventDefault()
-  const contents = $input.value
-  data.push({
-    "role": "user",
-    "content": contents
-  })
+  e.preventDefault();
+  const receiveLS = localStorage.getItem('workout');
+  if (receiveLS) {
+    const outputLS = receiveLS.toString();
+    data.push({
+      "role": "user",
+      "content": outputLS
+    });
+  }
   $input.value = ''
-
   showLoad();
-
   chatGPTAIP();
 })
 
@@ -138,7 +121,6 @@ function chatGPTAIP() {
   .then(res => {
     console.log(res)
     $answer.innerHTML = `<pre>${res.choices[0].message.content}</pre>`
-
     hideLoad();
   })
 }
