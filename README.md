@@ -24,18 +24,19 @@
 - 2023-08-30 ~ 2023-09-06
 ## 4. UI
 ### 1. 서비스 사용 설명 페이지를 제외한 모든 페이지들은 배경 이미지 슬라이드가 적용됩니다.<br>
-
 ![Alt text](img/background.gif)<br>
+
 ### 2. "start", "profile", "how to use", "back" 버튼 클릭으로 페이지 전환이 가능합니다.<br>
-
 ![Alt text](img/button.gif)<br>
+
 ### 3. "profile" 페이지에서 홈 트레이닝 루틴을 추천 받기 위한 키워드를 입력하고 "save" 버튼 클릭을 통해 키워드를 저장할 수 있습니다.<br>
-
 ![Alt text](img/keyword.gif)<br>
+
 ### 4. "save" 버튼을 클릭하면 입력된 키워드가 로컬스토리지에 저장됩니다.<br>
-
 ![Alt text](img/localstorage.gif)<br>
-### 5. "start" 페이지에서 "make a routine" 버튼을 클릭하면 로컬스토리지에 저장된 키워드를 추출하여 루틴을 생성합니다. 생성하는 동안 "WR이 출력 중입니다"라는 로딩 메세지가 화면에 나타납니다.<br>
 
+### 5. "start" 페이지에서 "make a routine" 버튼을 클릭하면 로컬스토리지에 저장된 키워드를 추출하여 루틴을 생성합니다. 생성하는 동안 "WR이 출력 중입니다"라는 로딩 메세지가 화면에 나타납니다.<br>
 ![Alt text](img/loading.gif)<br>
+
 ### 6. 로딩이 완료되면 로딩 메세지는 사라지고 키워드를 바탕으로 홈 트레이닝 루틴이 출력됩니다.<br>
+![Alt text](img/loutine.gif)<br>
