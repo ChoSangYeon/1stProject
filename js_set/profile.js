@@ -10,24 +10,27 @@ function setThumbnail(event) {
   reader.readAsDataURL(event.target.files[0]);
 }
 
-// 키워드 출력
+// 키워드 입출력
 const inputData = [];
 
 function sendInputValue() {
-  const keyWord = document.getElementById("inputValue");
-  inputData.push(inputValue.value);
-  keyWordOutput();
-  document.getElementById("inputValue").value = '';
-  console.log(inputData);
+  const inputValue = document.getElementById("inputValue");
+  const keyWord = inputValue.value.trim();
+
+  if (keyWord !== "") {
+    inputData.push(keyWord);
+    keyWordOutput();
+    inputValue.value = '';
+    console.log(inputData);
+  }
 }
 
 function keyWordOutput() {
   const outputValue = document.getElementById("outputValue");
-  document.getElementById("outputValue").innerHTML = inputData;
   outputValue.innerHTML = inputData.join("&nbsp;&nbsp;");
 }
 
-// save 버튼으로 배열을 localstorage에 저장 -> 피드백반영
+// save 버튼으로 배열을 localstorage에 저장
 function sendLocalStorage() {
   localStorage.setItem('workout', JSON.stringify(inputData));
 }

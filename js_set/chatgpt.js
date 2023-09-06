@@ -1,5 +1,4 @@
-//hidden처리
-const $input = document.querySelector('input')
+const $input = document.querySelector('input') //hidden처리
 const $button = document.querySelector('.gpt-answer')
 const $answer = document.querySelector('.answer')
 const $loader = document.querySelector(".loader");
