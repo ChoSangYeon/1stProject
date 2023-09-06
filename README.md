@@ -34,10 +34,10 @@
 |       box_text.css
 |       common.css
 |       loading.css
-|       profile.css
+|       input_keyowrd.css
 |
 +---html_set
-|       01_profile.html
+|       01_input_keyowrd.html
 |       02_routine.html
 |       03_htu.html
 |
@@ -45,27 +45,27 @@
 |
 \---js_set
         chatgpt.js
-        profile.js
+        input_keyowrd.js
 ```
 ## 4. UI
 ### 4.1 서비스 사용 설명 페이지를 제외한 모든 페이지들은 배경 이미지 슬라이드가 적용됩니다.<br>
-![Alt text](img/background.gif)<br>
+![Alt text](img/backImg.gif)<br>
 - 서비스 사용 설명 페이지의 경우 문단이 길어 화면 전환이 잦으면, 사용자의 가독성이 떨어질 것을 방지하기 위해 배경 이미지 하나만 넣었습니다.
 - 루틴 출력 페이지의 경우는 루틴 출력에 걸리는 대기 시간에 지루함 방지를 위해서 전환 효과를 주었습니다.
 - 서비스의 주된 사용자가 운동 초보자임을 가정하였을 때, 루틴을 전부 암기하기보다는 한 가지 동작을 수행하고 다시 화면을 볼 것을 가정하였고, 사용자가 서비스 이용 중 가장 오래 볼 페이지인 루틴 출력 페이지이기에 서비스 자체가 동적인 느낌을 받을 수 있도록 의도하였습니다. 
-### 4.2 "start", "profile", "how to use", "back" 버튼 클릭으로 페이지 전환이 가능합니다.<br>
-![Alt text](img/buttonV2.gif)<br>
+### 4.2 "start", "keyword", "how to use", "back" 버튼 클릭으로 페이지 전환이 가능합니다.<br>
+![Alt text](img/pageChange.gif)<br>
 - 기본적인 페이지의 디자인과 구성을 최대한 통일하여 배경 이미지 전환을 더욱 강조하였습니다.
 - "how to use" 페이지에서 사용자가 WR이라는 웹 서비스에 대한 상세 설명을 확인 할 수 있습니다.
 
-### 4.3 "profile" 페이지에서 홈 트레이닝 루틴을 추천 받기 위한 키워드를 입력하고 "save" 와 "delete" 버튼 클릭을 통해 키워드를 저장 및 삭제를 할 수 있습니다.<br>
-![Alt text](img/keywordV2.gif)<br>
+### 4.3 "keyword" 페이지에서 홈 트레이닝 루틴을 추천 받기 위한 키워드를 입력하고 "save" 와 "delete" 버튼 클릭을 통해 키워드를 저장 및 삭제를 할 수 있습니다.<br>
+![Alt text](img/inputDel.gif)<br>
 - "루틴 추천 키워드" 입력란에 운동하고 싶은 부위, 방식, 혹은 소지하고 있는 운동기구를 입력하고 "+" 버튼으로 하나씩 배열로 만들어 출력합니다. 사용자에게는 다시 문자열로 바꾸어 입력한 키워드를 확인할 수 있습니다.
 - 하단의 "delete" 버튼을 클릭하면 출력된 내용을 지웁니다.
 
 ### 4.4 "save", "delete" 버튼을 클릭하면 입력된 키워드가 로컬스토리지에 저장, 삭제 됩니다.<br>
-![Alt text](img/saveLS.gif)<br>
-![Alt text](img/delLS.gif)<br>
+![Alt text](img/saveLocal.gif)<br>
+![Alt text](img/delLocal.gif)<br>
 - 키워드 입력이 완료 되었다면, "save" 버튼으로 키워드 저장이 가능합니다.
 - 키워드는 로컬스토리지에 {key: "workout", value: "입력한 키워드의 배열"}로 저장됩니다.<br>
 - "delet" 버튼은 사용자가 보는 화면의 키워드만을 지우는 것이 아닌, 로컬스토리지의 value값도 함께 삭제해 줍니다.
@@ -82,4 +82,4 @@
 - 추천 루틴을 받았지만, 동일한 키워드로 다른 루틴을 원할 경우 "make a routine" 버튼을 다시 클릭하면 로딩 표시와 메세지가 다시 나타나며, 새로운 추천 루틴을 출력합니다.
 
 ## 5. 후기
-- 첫 개인 프로젝트를 진행하면서, 앞서 배웠던 HMTL, CSS, JS를 적용해 볼 수 있는 좋은 기회였습니다. 또한 개발 공부 경험 자체가 적다보니 스스로의 기획과 JS코드 구현에 대한 능력이 미흡했던 부분을 직면할 수 있었습니다.
+- 첫 개인 프로젝트를 진행하면서, 앞서 배웠던 HMTL, CSS, JS를 적용해 볼 수 있는 좋은 기회였습니다. 또한 개발 공부 경험 자체가 적다보니 스스로의 기획과 JS코드 구현에 대한 능력이 미흡했던 부분을 직면할 수 있었습니다. 
