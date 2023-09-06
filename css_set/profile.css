@@ -1,62 +1,7 @@
-/* 사진 썸네일 영역 */
-.profile-section {
-  margin-left: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.profile-section:first-child {
-  position: relative;
-}
-
-#image_container {
-  width: 84px;
-  height: 84px;
-  background-color: #aaa;
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-#image_container img {
-  width: 84px;
-  height: 84px;
-}
-
-#image_label {
-  margin-left: 3px;
-  margin-top: 3px;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  margin-left: 120px;
-}
-
-.nickname,
-.memo {
-  width: 200px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-weight: bold;
-  border: none;
-}
-
-.nickname {
-  height: 20px;
-  margin-bottom: 10px;
-}
-.memo {
-  height: 40px;
-  resize: none;
-}
-
 /* 키워드 영역 */
 .submit-box {
   width: 310px;
-  height: 230px;
+  height: 295px;
   overflow-y: auto; 
   margin: 20px auto 0;
   padding: 10px;
