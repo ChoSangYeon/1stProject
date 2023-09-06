@@ -17,19 +17,36 @@
 ### 2.2 배포 URL
 - https://chosangyeon.github.io/1stProject/
 
-## 3. 프로젝트 구조와 개발 일정
-### 3.1 프로젝트 구조
-- 초기 도안 작성
+## 3. 프로젝트 구조
+### 3.1 도안
 - 4개의 페이지 구성, 메인 페이지, 입력페이지, 출력 페이지, 설명 페이지
 - oven:<br>https://ovenapp.io/project/iEJeDlLhAzj9XAIXVrW25HZ5mgEwaqvH#BghWG
 ![Alt text](img/wr_plan.png)
-
-- 마인드맵
+### 3.2 마인드맵
 - MindMeister:<br>https://www.mindmeister.com/app/map/2930201760
 ![Alt text](img/mindmap.png)
-### 3.2 개발 일정(WBS)
-- 2023-08-30 ~ 2023-09-06
-
+### 3.3 구조
+```
+|   index.html
+|   README.md
+|
++---css_set
+|       box_text.css
+|       common.css
+|       loading.css
+|       profile.css
+|
++---html_set
+|       01_profile.html
+|       02_routine.html
+|       03_htu.html
+|
++---img
+|
+\---js_set
+        chatgpt.js
+        profile.js
+```
 ## 4. UI
 ### 4.1 서비스 사용 설명 페이지를 제외한 모든 페이지들은 배경 이미지 슬라이드가 적용됩니다.<br>
 ![Alt text](img/background.gif)<br>
@@ -65,4 +82,4 @@
 - 추천 루틴을 받았지만, 동일한 키워드로 다른 루틴을 원할 경우 "make a routine" 버튼을 다시 클릭하면 로딩 표시와 메세지가 다시 나타나며, 새로운 추천 루틴을 출력합니다.
 
 ## 5. 후기
-- 첫 개인 프로젝트를 진행하면서, 앞서 배웠던 HMTL, CSS, JS를 적용해 볼 수 있는 좋은 기회였습니다. 또한 개발 공부 경험 자체가 적다보니 스스로의 기획과 구현에 대한 능력이 미흡했던 부분을 직면할 수 있었습니다.
+- 첫 개인 프로젝트를 진행하면서, 앞서 배웠던 HMTL, CSS, JS를 적용해 볼 수 있는 좋은 기회였습니다. 또한 개발 공부 경험 자체가 적다보니 스스로의 기획과 JS코드 구현에 대한 능력이 미흡했던 부분을 직면할 수 있었습니다.
